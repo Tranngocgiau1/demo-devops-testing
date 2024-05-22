@@ -12,12 +12,12 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3  # Cập nhật lên phiên bản mới nhất
+      uses: actions/checkout@v2
 
     - name: Set up Node.js
-      uses: actions/setup-node@v3  # Cập nhật lên phiên bản mới nhất
+      uses: actions/setup-node@v2
       with:
-        node-version: '20'  # Sử dụng Node.js 20
+        node-version: '14'
 
     - name: Install dependencies
       run: npm install
